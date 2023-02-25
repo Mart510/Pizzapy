@@ -6,7 +6,8 @@ class Pizza:
         self.sauce = pizzaSauce
         self.cheese = pizzaCheese
         self.toppings = pizzaToppings
-        
+        self.price = 0.00
+
 
 #Pizza variables
 #pizza sizes

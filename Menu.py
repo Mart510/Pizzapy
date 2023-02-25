@@ -34,13 +34,14 @@ def menuPrinter():
 │ │ Bacon      = £0.50  Pineapple = £0.15  Olives    = £0.10  Tomatoes  = £0.30 │ │
 │ │ Chicken    = £0.50  Mushrooms = £0.40  Anchovies = £0.25  Garlic    = £0.40 │ │
 │ └─────────────────────────────────────────────────────────────────────────────┘ │
+│                                  Our Specials                                   │
 │ ┌─── Meatazza ────┐ ┌── Green belt ───┐ ┌─── PySpecial ───┐ ┌─── Mysterios ───┐ │
 │ │ Fire r' sauce   │ │ T & b' sauce    │ │ Fire r' sauce   │ │ Randomiser      │ │
 │ │ Cheddar         │ │ G & h' sauce    │ │ Stracciata      │ │ special pizza   │ │
 │ │ Mozzarella      │ │ Mozzarella      │ │ Mozzarella      │ │ 1 random sauce  │ │
 │ │ Pepperoni       │ │ Mushrooms       │ │ Sausage         │ │ choice          │ │
 │ │ Meatballs       │ │ Olives          │ │ Pepperoni       │ │ 2 random cheese │ │
-│ │ Pepperoni       │ │ Mushrooms       │ │ Sausage         │ │ choices         │ │
+│ │ Pepperoni       │ │ Mushrooms       │ │ Meatballs       │ │ choices         │ │
 │ │ Bacon           │ │ Rocket          │ │ Chorizo         │ │ 4 random        │ │
 │ │ Chicken         │ │ Artichoke       │ │ Onions          │ │ topping choices │ │
 │ │─────────────────│ │─────────────────│ │─────────────────│ │─────────────────│ │
