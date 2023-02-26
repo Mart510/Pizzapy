@@ -1,15 +1,41 @@
 #To create the Pizza class and control all of it's methods and interactions
-
+'''
+function will call and create a empty pizza, then successive user inputs
+will populate the pizza attributes and total the cost
+'''
 class Pizza:
-    def __init__(self, size, sauce, cheese, toppings):
-        self.size = pizzaSize
-        self.sauce = pizzaSauce
-        self.cheese = pizzaCheese
-        self.toppings = pizzaToppings
+    def __init__(self, size = {}, sauce = {}, cheese = {}, toppings = {}):
+        self.size = size
+        self.sauce = sauce
+        self.cheese = cheese
+        self.toppings = toppings
         self.price = 0.00
+        self.orderNumber = 0
 
+    #Explain the pizza options
+    def __repr__(self):
+        return print(
+        '''
+        Pizza order number {order}
+        A {size} pizza topped with {sauce}, {cheese}, {toppings}
+        '''
+        .format(order = self.orderNumber,
+                size = self.size,
+                sauce = self.sauce,
+                cheese = self.cheese,
+                toppings = self.toppings
+                )   
+        )
+    
+    #Method to update pizza size
 
-#Pizza variables
+    #Method to update sauce options
+
+    #Method to update toppings
+
+    #Method to calculate price
+
+#Pizza variables to be used when creating a pizza
 #pizza sizes
 pizzaSize = {
     'small': 8.99,
@@ -18,6 +44,7 @@ pizzaSize = {
     'chonky': 21.99
 }
 
+#dictionaries to control all pizza variables
 #pizza sauces
 pizzaSauce = {
     'tomato and basil': 0.50,
@@ -57,3 +84,17 @@ pizzaToppings = {
     'tomatoes': 0.30,
     'garlic': 0.40
 }
+
+#function to create pizza
+
+
+#choosing size
+
+
+
+
+#choosing sauce(s)
+
+#choosing cheese(s)
+
+#choosing topping(s) (max 4)
