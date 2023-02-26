@@ -28,6 +28,12 @@ class Pizza:
         )
     
     #Method to update pizza size
+    def sizePicker(self, number):
+        match number:
+            case 1:
+                self.size = pizzaSize('small')
+                self.price += pizzaSize.get('small')
+
 
     #Method to update sauce options
 

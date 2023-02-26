@@ -2,10 +2,10 @@
 
 #import needed files
 from Menu import menuPrinter
+from PizzaMaker import Pizza
 
 #print menu for user to read
 menuPrinter()
-
 
 '''
 This file to contain the main program, will be linking to other programs
@@ -46,8 +46,63 @@ def specialOrCustom():
 
     if int(choice) == 2:
         customOrder()
-       
+
+#function to choose pizza size
+def pizzaSizePicker():
+    choice = ''
+    def getInput():
+        choice = input('What size pizza would you like?\n 1. Small, 2. Medium, 3. Large, 4. Chonky, 5. Cancel order')
+        return choice
+    getInput()
+    if int(choice) != 1 or 2 or 3 or 4 or 5:
+        getInput()
+    if int(choice) == 5:
+        return
+    match choice:
+        case 1:
+            #Small pizza
+            return 'small'
+        case 2:
+            #Medium pizza
+            return 'medium'
+        case 3:
+            #Large pizza
+            return 'large'
+        case 4:
+            #Chonky pizza 
+            return 'chonky'
+
+    
+    return choice
 #if special, ask for size and then create pizza order
+def specialOrder():
+    choice = ''
+    #get the pizza they want
+    def getInput():
+        print(
+            '''
+            Today's specials are:
+            The Meatazza, a meat lovers feast
+            The Greenbelt, dedcadence of the forest (vegetarian friendly)
+            The PySpecial, our chef's favourite featuring award winning Stracciata italian cheese
+            The Mysterios, a pizza created at random in a size of your choosing, great for lovers of all things pizza
+            '''
+            )
+        choice = input('1. Meatazza, 2. Greenbelt, 3. PySecial, 4. Mysterios, 5. Cancel order')
+        return choice
+    getInput()
+    #check if input is valid, if not repeat question and give customer option to cancel/break out of loop
+    if int(choice) != 1 or 2 or 3 or 4 or 5:
+        getInput()
+    if int(choice) == 5:
+        return
+    #get pizza size
+    
+        
+    #create pizza
+
+    #give price
+
 
 #if custom ask for pizza size
 
