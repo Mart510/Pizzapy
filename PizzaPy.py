@@ -2,7 +2,8 @@
 
 #import needed files
 from Menu import menuPrinter
-from PizzaMaker import Pizza
+import PizzaMaker
+
 
 #print menu for user to read
 menuPrinter()
@@ -13,18 +14,7 @@ for practice and to keep this clear.
 
 '''
 
-#customer will be asked a series of questions to create their pizza
-
-#greeting
-def greeter():
-    print(
-    '''
-    Welcome to PizzaPy
-    Please navigate the questions using the numbers on your keyboard
-    '''
-    )
-
-#one of our specials or a custom pizza?
+#function to order a special or custom pizza
 def specialOrCustom():
     choice = ''
     #function to repeat input string
@@ -42,10 +32,10 @@ def specialOrCustom():
     
     #specials option
     if int(choice) == 1:
-        specialOrder()
+        return 'Special'
 
     if int(choice) == 2:
-        customOrder()
+        return 'Custom'
 
 #function to choose pizza size
 def pizzaSizePicker():
@@ -58,22 +48,41 @@ def pizzaSizePicker():
         getInput()
     if int(choice) == 5:
         return
-    match choice:
-        case 1:
-            #Small pizza
-            return 'small'
-        case 2:
-            #Medium pizza
-            return 'medium'
-        case 3:
-            #Large pizza
-            return 'large'
-        case 4:
-            #Chonky pizza 
-            return 'chonky'
+    else:
+        return PizzaMaker.sizePicker(choice)
 
-    
-    return choice
+#global variables
+orderList = [] #Keeps track of all orders
+
+#customer will be asked a series of questions to create their pizza
+
+#greeting
+def greeter():
+    print(
+    '''
+    Welcome to PizzaPy
+    Please navigate the questions using the numbers on your keyboard
+    '''
+    )
+
+
+#intialise pizza
+order = PizzaMaker.Pizza()
+orderList.append(order)
+
+#ask if they want a special or a custom pizza
+match specialOrCustom():
+    case 'Special':
+        #ask for size then create a special pizza
+        pizzaSizePicker()
+
+    case 'Custom':
+        #ask for size and start making a custom pizza
+
+
+
+
+
 #if special, ask for size and then create pizza order
 def specialOrder():
     choice = ''
@@ -103,7 +112,7 @@ def specialOrder():
 
     #give price
 
-
+'''
 #if custom ask for pizza size
 
 #ask for sauce option (max 2)
