@@ -143,7 +143,6 @@ match specialOrCustom():
             print('So your {pizzasize} Mysterios has the following toppings:\n').format(pizzasize = order.size)
             print('{sauce}, {cheese1}, {cheese2}, {topping1}, {topping2}, {topping3}, {topping4},').format(sauce = order.sauce[0], cheese1 = order.cheese[0][0], cheese2 = order.cheese[1][0], topping1 = order.toppings[0][0], topping2 = order.toppings[1][0], topping3 = order.toppings[2][0], topping4 = order.toppings[3][0])
 
-
     case 'Custom':
         #ask for size and start making a custom pizza
         choosePizzaSize()

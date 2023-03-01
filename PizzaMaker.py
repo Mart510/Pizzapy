@@ -150,12 +150,12 @@ class Pizza:
 
 #Pizza variables to be used when creating a pizza
 #pizza sizes
-pizzaSize = {
+pizzaSize = [
     ['small', 8.99], #0
     ['medium', 12.99], #1
     ['large', 16.99], #2
     ['chonky', 21.99] #3
-}
+]
 
 #dictionaries to control all pizza variables
 #pizza sauces
@@ -168,9 +168,9 @@ pizzaSauce = [
 
 #cheese options
 pizzaCheese = [
-    ['cheddar', 1.00,] #0
-    ['mozzarella', 2.00,] #1
-    ['pepperjack', 2.00,] #2
+    ['cheddar', 1.00,], #0
+    ['mozzarella', 2.00,], #1
+    ['pepperjack', 2.00,], #2
     ['stracciata', 4.00] #3
 ]
 
