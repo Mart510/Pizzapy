@@ -8,12 +8,13 @@ will populate the pizza attributes and total the cost
 
 #make sub classes for sauces, cheese, toppings
 class Pizza:
-    def __init__(self, size = [], sauce = [], cheese = [], toppings = []):
+    def __init__(self, size = [], sauce = [], cheese = [], toppings = [], specialYorN = ''):
         self.size = size
         self.sauce = sauce
         self.cheese = cheese
         self.toppings = toppings
         self.price = 0.00
+        self.specialYorN = specialYorN
 
     #Explain the pizza options
     def __repr__(self):
@@ -29,11 +30,12 @@ class Pizza:
                 toppings = self.toppings
                 )   
         )
+    
 
     #Method to let the customer know what they ordered
     def customerOrder(self):
         # temp variables to hold everything on the pizza
-
+        pass
         #print out the size and then a string with all of the cheese, sauce and topping options
 
     #Method to calculate cost of a special pizza
@@ -71,6 +73,7 @@ class Pizza:
                 self.toppings.append(pizzaToppings[3])
                 self.toppings.append(pizzaToppings[4])
                 self.price = 5.00
+                self.specialYorN = 'Meatazza'
             case 'Green belt':
                 #create a green belt pizza
                 self.sauce.append(pizzaSauce[0])
@@ -82,6 +85,7 @@ class Pizza:
                 self.toppings.append(pizzaToppings[12])
                 self.toppings.append(pizzaToppings[15])
                 self.price = 4.50
+                self.specialYorN = 'Green belt'
 
             case 'PySpecial':
                 #create a PySpecial
@@ -94,6 +98,7 @@ class Pizza:
                 self.toppings.append(pizzaToppings[10])
                 self.toppings.append(pizzaToppings[6])
                 self.price = 8.00
+                self.specialYorN = 'PySpecial'
 
             case 'Mysterios':
                 #create mysterios pizza
@@ -105,8 +110,19 @@ class Pizza:
                 self.toppings.append(pizzaToppings[random.randint(0, len(pizzaToppings))])
                 self.toppings.append(pizzaToppings[random.randint(0, len(pizzaToppings))])
                 self.price = 3.75
+                self.specialYorN = 'Mysterios'
 
-                
+    #choosing sauce(s)
+    def addSauce(self, itemnum):
+        self.sauce.append(pizzaSauce[itemnum])
+
+    #choosing cheese(s)
+    def addCheese(self, itemnum):
+        self.cheese.append(pizzaCheese[itemnum])
+
+    #choosing topping(s) (max 4)
+    def addTopping(self, itemnum):
+        self.toppings.append(pizzaToppings[itemnum])
 
 
     #Method to update pizza size
@@ -182,14 +198,3 @@ pizzaToppings = [
     ['garlic', 0.40] #19
 ]
 
-
-
-
-
-
-
-#choosing sauce(s)
-
-#choosing cheese(s)
-
-#choosing topping(s) (max 4)

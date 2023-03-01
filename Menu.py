@@ -41,7 +41,7 @@ def menuPrinter():
 │ │ Mozzarella      │ │ Mozzarella      │ │ Mozzarella      │ │ 1 random sauce  │ │
 │ │ Pepperoni       │ │ Mushrooms       │ │ Sausage         │ │ choice          │ │
 │ │ Meatballs       │ │ Olives          │ │ Pepperoni       │ │ 2 random cheese │ │
-│ │ Pepperoni       │ │ Mushrooms       │ │ Meatballs       │ │ choices         │ │
+│ │ Sliced ham      │ │ Onions          │ │ Meatballs       │ │ choices         │ │
 │ │ Bacon           │ │ Rocket          │ │ Chorizo         │ │ 4 random        │ │
 │ │ Chicken         │ │ Artichoke       │ │ Onions          │ │ topping choices │ │
 │ │─────────────────│ │─────────────────│ │─────────────────│ │─────────────────│ │
