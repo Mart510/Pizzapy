@@ -197,4 +197,3 @@ pizzaToppings = [
     ['tomatoes', 0.30], #18
     ['garlic', 0.40] #19
 ]
-
