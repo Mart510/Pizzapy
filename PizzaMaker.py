@@ -102,13 +102,13 @@ class Pizza:
 
             case 'Mysterios':
                 #create mysterios pizza
-                self.sauce.append(pizzaSauce[random.randint(0, len(pizzaSauce))])
-                self.cheese.append(pizzaCheese[random.randint(0, len(pizzaCheese))])
-                self.cheese.append(pizzaCheese[random.randint(0, len(pizzaCheese))])
-                self.toppings.append(pizzaToppings[random.randint(0, len(pizzaToppings))])
-                self.toppings.append(pizzaToppings[random.randint(0, len(pizzaToppings))])
-                self.toppings.append(pizzaToppings[random.randint(0, len(pizzaToppings))])
-                self.toppings.append(pizzaToppings[random.randint(0, len(pizzaToppings))])
+                self.sauce.append(pizzaSauce[random.randint(0, (len(pizzaSauce)-1))])
+                self.cheese.append(pizzaCheese[random.randint(0, (len(pizzaCheese)-1))])
+                self.cheese.append(pizzaCheese[random.randint(0, (len(pizzaCheese)-1))])
+                self.toppings.append(pizzaToppings[random.randint(0, (len(pizzaToppings)-1))])
+                self.toppings.append(pizzaToppings[random.randint(0, (len(pizzaToppings)-1))])
+                self.toppings.append(pizzaToppings[random.randint(0, (len(pizzaToppings)-1))])
+                self.toppings.append(pizzaToppings[random.randint(0, (len(pizzaToppings)-1))])
                 self.price = 3.75
                 self.specialYorN = 'Mysterios'
 
