@@ -77,8 +77,6 @@ def toppings():
 def closeOrder():
     print('Thanks for your order, it\'ll be ready in 10 minutes, please take a seat')
 
-#global variables
-orderList = [] #Keeps track of all orders
 
 #customer will be asked a series of questions to create their pizza
 
@@ -97,7 +95,7 @@ Please navigate the questions using the numbers on your keyboard\n
 
 #intialise pizza
 order = PizzaMaker.Pizza()
-orderList.append(order)
+#orderList.append(order)
 
 #ask if they want a special or a custom pizza
 match specialOrCustom():
@@ -152,7 +150,6 @@ match specialOrCustom():
         #ask for size and start making a custom pizza
         choosePizzaSize()
         
-
         #ask for sauce options
         sauce()
         #second sauce?
@@ -193,7 +190,6 @@ match specialOrCustom():
             else:
                 orderSaucesString = orderSaucesString + order.sauce[i][0] + ', '
 
-
         for i in range(len(order.cheese)):
             if i == range(len(order.cheese)):
                 break
@@ -211,10 +207,6 @@ match specialOrCustom():
         print('Your total us {price}'.format(price = order.price))
         closeOrder()
         
-
-
-
-
 #if special, ask for size and then create pizza order
 def specialOrder():
     choice = ''
@@ -237,12 +229,6 @@ def specialOrder():
         getInput()
     if int(choice) == 5:
         return
-    #get pizza size
-    
-        
-    #create pizza
-
-    #give price
 
 '''
 #if custom ask for pizza size
