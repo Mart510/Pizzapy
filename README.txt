@@ -12,4 +12,4 @@ This project contains several files in order to work.
 PizzaPy.py contains all of the main functions PizzaMaker.py contains all of the Pizza class instructions and methods Menu.py contains the ASCII menu
 
 Authors
-@donteatgold
+@Mart510
