@@ -49,15 +49,16 @@ class Pizza:
         #cost of the size
         total += self.size[1]
         #cost of the sauce(s)
-        for i in range(self.sauce):
+        for i in range(len(self.sauce)):
             total += self.sauce[i][1]
         #cost of the cheese(s)
-        for i in range(self.cheese):
+        for i in range(len(self.cheese)):
             total += self.cheese[i][1]
         #cost of the topping(s)
-        for i in range(self.toppings):
+        for i in range(len(self.toppings)):
             total += self.toppings[i][1]
-        return total
+        self.price = total
+        return
 
     #Special Menu Method
     def specialPizza(self, choice):
